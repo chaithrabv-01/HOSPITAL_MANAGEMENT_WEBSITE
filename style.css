@@ -1,0 +1,180 @@
+/* ===== GLOBAL SETTINGS ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+    color: #333;
+}
+
+h2 {
+    color: #023e8a;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: #0077b6;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* ===== NAVIGATION BAR ===== */
+nav {
+    background: #023e8a;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===== PAGE CONTAINER ===== */
+.container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* ===== HERO SECTION (Home Page) ===== */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h2 {
+    font-size: 36px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ===== FLOATING IMAGE ANIMATION ===== */
+.float-img {
+    width: 380px;
+    border-radius: 15px;
+    animation: floatLR 3s ease-in-out infinite;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+@keyframes floatLR {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(30px); }
+    100% { transform: translateX(0); }
+}
+
+/* ===== ABOUT PAGE ===== */
+.about-box {
+    padding: 10px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* ===== SPECIALTIES / DEPARTMENTS ===== */
+.depart-card {
+    background: #caf0f8;
+    padding: 18px;
+    margin: 15px 0;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* ===== DOCTORS PAGE ===== */
+.doctor-card {
+    display: flex;
+    background: #e3f2fd;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.doctor-card img {
+    width: 130px;
+    height: 130px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 3px solid #0077b6;
+}
+
+/* ===== SERVICES PAGE ===== */
+.service-card {
+    background: #fff3cd;
+    border-left: 7px solid #ffb300;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+/* ===== APPOINTMENT FORM ===== */
+.appointment-form input,
+.appointment-form select,
+.appointment-form button {
+    width: 90%;
+    padding: 12px;
+    margin: 12px 0;
+    font-size: 17px;
+    border: 1px solid #777;
+    border-radius: 8px;
+}
+
+.appointment-form button {
+    background: #0077b6;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.appointment-form button:hover {
+    background: #023e8a;
+}
+
+/* ===== CONTACT PAGE ===== */
+.contact-box {
+    padding: 10px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.contact-box strong {
+    color: #0077b6;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #023e8a;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+}

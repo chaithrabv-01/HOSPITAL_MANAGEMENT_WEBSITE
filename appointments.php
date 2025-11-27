@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Appointments - CityCare Hospital</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
 
@@ -23,28 +24,29 @@
 
 <div class="container">
     <h2>Smart Appointment System</h2>
-
     <form class="appointment-form" action="submit_appointment.php" method="POST">
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email" required>
-        <input type="number" placeholder="Phone Number" required>
 
-        <select name="department" required>
-            <option value="">Select Department</option>
-            <option>Cardiology</option>
-            <option>Neurology</option>
-            <option>Orthopedics</option>
-            <option>Pediatrics</option>
-        </select>
+    <input type="text" name="fullname" placeholder="Full Name" required>
 
-        <input type="date" name="date"  required>
+    <input type="email" name="email" placeholder="Email" required>
 
-        <button type="submit">Book Appointment</button>
-    </form>
+    <input type="number" name="phone" placeholder="Phone Number" required>
 
+    <select name="department" required>
+        <option value="">Select Department</option>
+        <option>Cardiology</option>
+        <option>Neurology</option>
+        <option>Orthopedics</option>
+        <option>Pediatrics</option>
+    </select>
+
+    <input type="date" name="date" required>
+
+    <button type="submit">Book Appointment</button>
+</form>
 </div>
-
 <footer>© 2025 CityCare Hospital. All Rights Reserved.</footer>
-
 </body>
 </html>
+
+    

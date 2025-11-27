@@ -10,16 +10,16 @@
 
 <header>
     <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="specialties.html">Specialties</a>
-        <a href="doctors.html">Doctors</a>
-        <a href="services.html">Services</a>
-        <a href="appointments.html">Appointments</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="login.html">Login</a>
-        <a href="register.html">Register</a>
+        <a href="index.php">Home</a>
+        <a href="about.php">About Us</a>
+        <a href="departments.php">Specialties</a>
+        <a href="doctors.php">Doctors</a>
+        <a href="services.php">Services</a>
+        <a href="appointments.php">Appointments</a>
+        <a href="contact.php">Contact Us</a>
+        <a href="contact.php">Contact Us</a>
+        <a href="login.php">Login</a>
+        <a href="register.php">Register</a>
     </nav>
 </header>
 
@@ -41,7 +41,7 @@
                 providing advanced Pediatric care with compassion.
             </p>
 
-            <a class="appointment-btn" href="appointments.html">Book Appointment</a>
+            <a class="appointment-btn" href="appointments.php">Book Appointment</a>
         </div>
     </div>
 

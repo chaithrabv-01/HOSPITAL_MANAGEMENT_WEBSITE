@@ -1,3 +1,4 @@
+<?php include 'db.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,25 +47,48 @@
 <header>CityCare Multi-Specialty Hospital</header>
 
 <nav>
-    <a href="index.html">Home</a>
-    <a href="login.html">Login</a>
-    <a href="register.html">Register</a>
+    <a href="index.php">Home</a>
+    <a href="login.php">Login</a>
+    <a href="register.php">Register</a>
 </nav>
 
-<div class="login-box">
+    <div class="login-box">
     <h2>Login</h2>
 
-    <form>
-        <input type="email" placeholder="Email" required>
-        <input type="password" placeholder="Password" required>
+    <form method="POST">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
 
-        <button type="submit">Login</button>
+        <button type="submit" name="login">Login</button>
     </form>
-
-    <p>New user? <a href="register.html">Create an account</a></p>
 </div>
+
+<?php
+if (isset($_POST['login'])) {
+
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    $sql = "SELECT * FROM users WHERE email='$email'";
+    $result = mysqli_query($conn, $sql);
+
+    if (mysqli_num_rows($result) == 1) {
+        $row = mysqli_fetch_assoc($result);
+
+        if (password_verify($password, $row['password'])) {
+            echo "<p style='color:green;'>Login Successful! Welcome, " . $row['fullname'] . "</p>";
+        } else {
+            echo "<p style='color:red;'>Incorrect Password!</p>";
+        }
+    } else {
+        echo "<p style='color:red;'>Email not found!</p>";
+    }
+}
+?>
 
 <footer>© 2025 CityCare Hospital. All Rights Reserved.</footer>
 
 </body>
 </html>
+
+    

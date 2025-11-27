@@ -10,21 +10,21 @@
 <header>CityCare Multi-Specialty Hospital</header>
 
 <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="departments.html">Specialties</a>
-    <a href="doctors.html">Doctors</a>
-    <a href="services.html">Services</a>
-    <a href="appointments.html">Appointments</a>
-    <a href="contact.html">Contact Us</a>
-    <a href="login.html">Login</a>
-    <a href="register.html">Register</a>
+    <a href="index.php">Home</a>
+    <a href="about.php">About Us</a>
+    <a href="departments.php">Specialties</a>
+    <a href="doctors.php">Doctors</a>
+    <a href="services.php">Services</a>
+    <a href="appointments.php">Appointments</a>
+    <a href="contact.php">Contact Us</a>
+    <a href="login.php">Login</a>
+    <a href="register.php">Register</a>
 </nav>
 
 <div class="container">
     <h2>Our Doctors</h2>
 
-    <a href="doctor-asha.html" class="doctor-link">
+    <a href="doctor-asha.php" class="doctor-link">
     <div class="doctor-card">
         <img src="asha.png">
         <div>
@@ -33,7 +33,7 @@
         </div>
     </div>
 
-    <a href="doctor-rohan.html" class="doctor-link">
+    <a href="doctor-rohan.php" class="doctor-link">
     <div class="doctor-card">
         <img src="rohan.png">
         <div>
@@ -42,7 +42,7 @@
         </div>
     </div>
 
-    <a href="doctor-priya.html" class="doctor-link">
+    <a href="doctor-priya.php" class="doctor-link">
     <div class="doctor-card">
         <img src="priya.png">
         <div>

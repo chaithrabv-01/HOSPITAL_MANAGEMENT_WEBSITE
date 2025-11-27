@@ -28,9 +28,9 @@
 
 <h3>Services:</h3>
 <ul>
-    <li><a href="video-consultation.html">Video Consultation</a> – Talk to doctors face-to-face from home.</li>
-    <li><a href="digital-prescription.html">Digital Prescription</a> – Receive prescriptions instantly online.</li>
-    <li><a href="follow-up.html">Follow-up Sessions</a> – Continue your treatment with scheduled sessions.</li>
+    <li><a href="video-consultation.php">Video Consultation</a> – Talk to doctors face-to-face from home.</li>
+    <li><a href="digital-prescription.php">Digital Prescription</a> – Receive prescriptions instantly online.</li>
+    <li><a href="follow-up.php">Follow-up Sessions</a> – Continue your treatment with scheduled sessions.</li>
 </ul>
 
 </body>

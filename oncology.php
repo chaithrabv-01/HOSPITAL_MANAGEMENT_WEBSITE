@@ -39,9 +39,7 @@
     <a href="index.php">Home</a>
     <a href="about.php">About Us</a>
     <a href="departments.php">Specialties</a>
-    <a href="doctors.php">Doctors</a>
     <a href="services.php">Services</a>
-    <a href="appointments.php">Appointments</a>
     <a href="contact.php">Contact Us</a>
     <a href="login.php">Login</a>
     <a href="register.php">Register</a>

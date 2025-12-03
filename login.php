@@ -1,4 +1,7 @@
-<?php include 'db.php'; ?>
+<?php
+session_start(); 
+include 'db.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,36 +55,50 @@
     <a href="register.php">Register</a>
 </nav>
 
-    <div class="login-box">
+<div class="login-box">
     <h2>Login</h2>
 
     <form method="POST">
         <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="phone" placeholder="Phone Number" required>
         <input type="password" name="password" placeholder="Password" required>
 
         <button type="submit" name="login">Login</button>
     </form>
+
+    <!-- Forgot Password link -->
+    <p><a href="forgot_password.php">Forgot Password?</a></p>
 </div>
 
 <?php
 if (isset($_POST['login'])) {
 
     $email = $_POST['email'];
+    $phone = $_POST['phone'];
     $password = $_POST['password'];
 
-    $sql = "SELECT * FROM users WHERE email='$email'";
+    $sql = "SELECT * FROM users WHERE email='$email' AND phone='$phone'";
     $result = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($result) == 1) {
         $row = mysqli_fetch_assoc($result);
 
         if (password_verify($password, $row['password'])) {
-            echo "<p style='color:green;'>Login Successful! Welcome, " . $row['fullname'] . "</p>";
-        } else {
-            echo "<p style='color:red;'>Incorrect Password!</p>";
+
+            // Store session data
+            $_SESSION['user_id'] = $row['id'];
+            $_SESSION['fullname'] = $row['fullname'];
+
+            // Redirect to homepage
+            header("Location: index.php");
+            exit();
+        } 
+        else {
+            echo "<p style='color:red; text-align:center;'>Incorrect Password!</p>";
         }
-    } else {
-        echo "<p style='color:red;'>Email not found!</p>";
+    } 
+    else {
+        echo "<p style='color:red; text-align:center;'>Email or Phone number not found!</p>";
     }
 }
 ?>
@@ -90,5 +107,3 @@ if (isset($_POST['login'])) {
 
 </body>
 </html>
-
-    
